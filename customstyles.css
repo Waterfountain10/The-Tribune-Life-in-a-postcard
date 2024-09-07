@@ -1,0 +1,454 @@
+.zeyada-regular {
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+.image-container {
+  text-align: center; /* Center the image container if needed */
+}
+
+.header-image {
+  max-width: 100%; /* Makes the image responsive */
+  max-height: 500px; /* Adjust based on your header's height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Use block to apply margin: auto */
+  margin: auto; /* Center the image horizontally */
+}
+
+.body {
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(185, 185, 185);
+}
+.title {
+  color: rgb(185, 185, 185);
+}
+  
+  .subtitle {
+    color: rgb(185, 185, 185);
+    font-family: 'Courier New', Courier, monospace;
+    width: 75%;
+  }
+  
+  .author {
+    color: rgb(185, 185, 185);
+    
+  }
+  .header-img{
+    margin-top:5%;
+    width: 35%;
+    height: auto;
+    margin-left: 53%;
+    
+  }
+
+  .center-text {
+    text-align: center !important;
+  }
+  hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+
+.section-header {
+  color: #b9bac1;
+  font-family: 'Amplitude-Black';
+  font-size: 24px !important;
+}
+.filler {
+    height: 10vw;
+    opacity: 0;
+    background-color: black;
+  }
+  
+  .tribune {
+    font-family: "Playfair Display" !important;
+
+    color: #c7c1c7 !important;
+    float: left;
+    font-size: 32px;
+  }
+  
+  .tribune a {
+    text-decoration: none !important;
+    color:#c7c1c7 !important;
+
+    text-align: center;
+
+    cursor: pointer;
+  }
+  
+  .feature {
+    font-family: "Garamond 3 LT Std";
+    margin-right: 2.5vw;
+    color: #c7c1c7;
+    float: right;
+    margin-top: 1vw;
+    font-size: 30px;
+  }
+  :root {
+    --nav-height: 70px; 
+  }
+    
+  .header {
+    position: fixed;
+    background: #000000;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: Center;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+  .nav-hidden{
+    transform: translateY(-90px);
+  }
+  
+
+  .cover {
+
+  overflow: hidden;
+  position: relative;
+  height: 10%;
+  margin-top: 40px;
+  }
+  
+  .row {
+    display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center;
+  position:relative;
+  }
+  .innerwrap p {
+    margin-bottom: 2em;
+    font-size: 22px;
+
+  }
+    
+    /* First letter styling */
+    .innerwrap > p:first-of-type::first-letter {
+    font-size:70px;
+    text-decoration: bold;
+    float: left;
+    line-height: 60px;
+    padding-right: 8px;
+    margin-top:3px;
+  }
+  
+  .innerwrap {
+    width: 50%;
+    height: 100%;
+    max-width: 100%;
+    margin:  auto;
+    padding: 2px 0;
+    font-size: 3em;
+    line-height: 1.6;
+    text-align: left;
+
+  }
+  
+    
+  i {
+    font-style: italic;
+  }
+  ul {
+    list-style-type: disc; /* Use 'disc' for filled circles */
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Adjust as needed */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: black;
+}
+
+.quote {
+    padding: 10px 20px; /* Padding around the quote text */
+    margin: 20px 0; /* Margin to separate from surrounding text */
+    color: #fe0101 !important;
+    font-family: 'Aachen' !important;
+    font-size: 3vw !important;
+    text-align: center;
+}
+
+@media (max-width: 415px) {
+    
+      .tribune{
+        font-size: 28px;
+      }
+      .feature{
+        margin-top: 1.8vw;
+        font-size: 25px;
+      }
+
+      .title {
+        width: 80%;
+      }
+
+      .subtitle {
+        width: 75%;
+      }
+
+      .author {
+        width: 70%;
+      }
+
+      .quote {
+        font-size: 25px !important;
+      }
+  }
+  @media (min-width: 416px) {
+    .title{
+        font-size: 5vw !important;
+        width: 55;
+      }
+      .tribune{
+        font-size: 32px;
+      }
+      .feature{
+        margin-top: 1vw;
+        font-size: 30px;
+      }
+  }
+ 
+  @media (max-width: 768px) {
+    .innerwrap{
+      width: 80% !important;
+    }
+
+  }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        background: #f4f1de; /* Retro beige tan background */
+        scroll-behavior: smooth;
+        font-family: "Zeyada", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .mupss-logo {
+
+        color: #c7c1c7 !important;
+        float: right;
+        width: 10%;
+        height: 50px;
+    }
+
+    .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Adjust based on your preference */
+
+    overflow: hidden;
+    }
+
+    .images-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+        gap: 20px; /* Space between grid items */
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%; /* Ensures images take up the full grid cell width */
+        height: auto; /* Maintains aspect ratio */
+        object-fit: cover; /* Ensures images cover the grid area without distortion */
+    }
+    .mupss-img {
+        width: "200";
+        height: 100;
+    }
+    .gallery img {
+    width: 100%; /* Ensures images fill the cell */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Covers the grid area, cropping the image if necessary */
+    border: 5px solid white; /* Simulates a white border like many postcards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .gallery img:hover {
+        transform: scale(1.03); /* Slightly enlarges the photo on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhances shadow for a lifted effect */
+    }
+
+    .images-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2-column grid layout */
+        gap: 20px; /* Space between items */
+        padding: 20px; /* Adds some space around the grid */
+    }
+
+    /* Optional: Slight rotation for a casual arrangement look */
+    .gallery img:nth-child(odd) {
+        transform: rotate(-2deg);
+    }
+
+    .gallery img:nth-child(even) {
+        transform: rotate(2deg);
+    }
+
+    @media (max-width: 768px) {
+    .images-container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+
+    /* Adjust rotation on smaller screens if necessary */
+    .gallery img {
+        transform: rotate(0deg); /* Resets rotation for a cleaner look on small screens */
+    }
+}
+
+    .mupss-logo {
+
+    float: right;
+    /* Removed color property */
+    /* Adjusted width and height if necessary */
+    }
+
+    .mupss-img {
+        width: 150px; /* Reduced width */
+        height: auto;
+    }
+
+    .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Increase if you want the overall gallery to be larger */
+
+    overflow: hidden;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust card size and make grid responsive */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Ensures items are centered */
+    padding: 20px; /* Adds some space around the grid */
+}
+
+.gallery img {
+    width: 100%; /* Ensures images fill the cell */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Covers the grid area, cropping the image if necessary */
+    border: 5px solid white; /* Simulates a white border like many postcards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.03); /* Slightly enlarges the photo on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhances shadow for a lifted effect */
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keeps it as a 2-column layout */
+    gap: 20px; /* Space between items */
+    justify-content: center;
+    padding: 20px; /* Adds some space around the grid */
+    width: 100%; /* Ensures the container takes full width of its parent */
+}
+
+.gallery {
+    width: 100%; /* Adjust this to change the overall width of the gallery, affecting column width */
+    max-width: 1200px; /* Adjust this to prevent the gallery from becoming too wide on larger screens */
+     /* Centers the gallery and adds vertical spacing */
+     margin-left:auto;
+     margin-right:auto;
+}
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keeps the 2-column layout */
+    gap: 30px; /* Increase the gap for more space between images */
+    width: 100%;
+    justify-content: center; /* Centers the grid items in their container */
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keeps the 2-column layout */
+    gap: 30px; /* Spacing between images */
+    justify-items: center; /* Center align items */
+    padding: 20px;
+}
+
+.last-row {
+    grid-column: 1 / -1; /* Makes the last image take full row */
+    max-width: calc(50% - 15px); /* Adjust width to half minus half the gap */
+    justify-self: center; /* Center the image in the grid */
+}
+
+.photographer-statement {
+    max-width: 600px; /* Adjust based on your layout preferences */
+    margin: 40px auto; /* Centers the statement and adds vertical spacing */
+    padding: 50px;
+    background: #fffaf0; /* A light, paper-like background color */
+    border: 1px solid #d3d3d3; /* Subtle border for a refined look */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+
+}
+
+.photographer-statement h2 {
+    font-family: 'Dancing Script', cursive; /* A handwritten-style font for the title */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px; /* Adjust the size to your liking */
+}
+
+.photographer-statement p {
+    font-family: Cambria;
+    text-indent: 0; /* Adjust or remove based on your preference */
+    margin-bottom: 15px;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Emphasizing the first paragraph to mimic a postcard greeting */
+.photographer-statement p:first-of-type {
+    font-family: 'Dancing Script', cursive; /* Handwritten-style font for a personal touch */
+    font-size: 20px; /* Slightly larger font size for emphasis */
+    margin-bottom: 20px;
+    text-align: center; /* Centering the first paragraph like a postcard message */
+}
+
+/* Additional styling for strong (bold) and em (italic) elements within paragraphs */
+.photographer-statement strong {
+    font-weight: bold;
+}
+
+.photographer-statement em {
+    font-style: italic;
+}
+
+.bottom {
+  text-align: center;
+}
+
+  
+  
